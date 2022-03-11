@@ -25,7 +25,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "env": "node -r dotenv/config ./node_modules/.bin/react-scripts start dotenv_config_path=development.env",
-    "homepage": "https://ShamshodIsayev.github.io/Portfolio",
+    "homepage": "https://app.herokuapp.com/",
     "predeploy": "npm run build",
     "deploy": "gh-pages -b master -d build"
   },
@@ -47,5 +47,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://ShamshodIsayev.github.io/Portfolio"
+  "homepage": "https://app.herokuapp.com/"
 }
