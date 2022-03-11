@@ -1,38 +1,140 @@
 .App {
-  text-align: center;
+  perspective: 300px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.window {
+  perspective: 500px;
+  width: 100%;
+  height: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.welcome {
+  width: 100%;
+  height: 100vh;
+  background-color: blueviolet;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: rotateX(264deg);
+  transform-origin: top;
+  transition: ease 5s;
+}
+
+.welcome.active {
+  transform: rotateX(360deg);
+}
+
+.apps {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  transform: rotateX(270deg);
+  transform-origin: bottom;
+  transition: ease-out 3s;
+  overflow: hidden;
+}
+
+.apps.active {
+  transform: rotateX(0deg);
+}
+
+.chevron-btn {
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.425);
+  transition: 0.5s;
+}
+
+.chevron-btn:hover {
   color: white;
+  font-size: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.left-side-icon,
+.right-side-icon {
+  height: 80vh;
+  width: 50px;
+  position: fixed;
+  left: 0%;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  z-index: 12;
+  align-items: center;
+  transition: 0.2s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.right-side-icon {
+  right: 0%;
+  left: auto;
+}
+
+.left-side-icon:hover,
+.right-side-icon:hover {
+  background-color: rgba(139, 139, 139, 0.514);
+}
+
+.right-side-icon:hover .next-page,
+.left-side-icon:hover .prev-page {
+  opacity: 1;
+}
+
+.next-page,
+.prev-page {
+  position: absolute;
+  top: 50%;
+  right: 25%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: fangsong;
+  transform: rotate(91deg);
+}
+
+.prev-page {
+  left: 45%;
+  right: auto;
+}
+
+.right-btn {
+  animation: right-chevrons 1s ease 0s infinite forwards;
+}
+
+.left-btn {
+  animation: left-chevrons 1s ease 0s infinite forwards;
+}
+
+@keyframes left-chevrons {
+  0% {
+    transform: translateX(-7px);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: translateX(13px);
+  }
+  100% {
+    transform: translateX(-7px);
+  }
+}
+
+@keyframes right-chevrons {
+  0% {
+    transform: translateX(15px);
+  }
+  50% {
+    transform: translateX(-7px);
+  }
+  100% {
+    transform: translateX(15px);
   }
 }

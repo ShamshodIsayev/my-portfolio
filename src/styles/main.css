@@ -1,0 +1,241 @@
+@font-face {
+  font-family: "laBelle";
+  src: url(../fonts/LaBelleAurore-Regular.ttf);
+}
+@font-face {
+  font-family: "smooch";
+  src: url(../fonts/Smooch-Regular.ttf);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e8e8e8;
+  border: 0px none #ffffff;
+  border-radius: 36px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #d9d9d9;
+}
+::-webkit-scrollbar-track {
+  background: #3d3d3d;
+  border: 0px none #ffffff;
+  border-radius: 48px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #2e2e2e;
+}
+::-webkit-scrollbar-track:active {
+  background: #292929;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.main p {
+  margin: 8px 0;
+}
+
+.main {
+  position: relative;
+}
+
+.info {
+  background: url("../images/bg.jpg") no-repeat;
+  padding: 5% 0% 0% 15%;
+  background-color: rgba(0, 0, 0, 0.856);
+  height: 100vh;
+}
+
+.info__tag-html,
+.info__tag {
+  color: grey;
+  font-family: "labelle";
+}
+
+.info__body {
+  padding-left: 5%;
+}
+
+.info__title {
+  width: 50vw;
+  font-size: 50px;
+  font-family: fangsong;
+  position: relative;
+  color: white;
+  margin: 20px 0;
+  text-shadow: 0 0 7px;
+  padding-left: 2%;
+}
+
+.info__title span {
+  transition: 2s;
+  position: absolute;
+  transform: rotate(19000deg);
+  top: -1000%;
+  left: -1500%;
+}
+
+.info__title span.active {
+  top: 0;
+  left: 0;
+  transform: rotate(0);
+  position: inherit;
+}
+
+.info__title .animate i {
+  position: relative;
+  display: inline-block;
+  animation: animateTextWelcome 5s ease-in-out 4s infinite normal forwards;
+}
+
+.info__des {
+  color: bisque;
+  padding-left: 2%;
+  font-size: 23px;
+}
+
+.fixed-logo {
+  position: absolute;
+  top: 20%;
+  right: 6%;
+  transform: rotate(333deg);
+  font-size: 304px;
+  z-index: 1;
+  font-weight: 100;
+  font-style: italic;
+  font-family: "smooch";
+  color: #00000042;
+  margin: 0;
+}
+
+.animation * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  animation: animateHover 5s linear infinite;
+  background-color: #00130041;
+  overflow: hidden;
+  z-index: 11;
+  /* display: none; */
+}
+
+.animation span {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+
+.animation span::before {
+  content: "";
+  position: absolute;
+  background-color: red;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: 2s;
+  transform: scale(0);
+  box-shadow: 0 0 12px red, 0 0 12px red, 0 0 20px red, 0 0 30px red,
+    0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red, 0 0 80px red,
+    0 0 90px red, 0 0 100px red;
+}
+
+.animation span:hover::before {
+  transition: 0s;
+  transform: scale(1);
+}
+
+.resume_btn {
+  position: absolute;
+  bottom: 4%;
+  right: 4%;
+  width: 230px;
+  height: 30px;
+  border: 1px solid blue;
+  cursor: pointer;
+  letter-spacing: 6px;
+  background-color: transparent;
+  z-index: 20;
+  overflow: hidden;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 255, 0.473);
+  align-items: center;
+}
+
+.resume_btn:hover {
+  background-color: blue;
+  box-shadow: 0 0 20px 5px blue;
+}
+
+.resume_btn a {
+  color: white;
+  text-decoration: none;
+}
+
+@keyframes animateTextWelcome {
+  0% {
+    transform: scaleY(1) translateY(0) translateY(0);
+  }
+  3.0% {
+    transform: scaleY(0.5) translateY(20px);
+  }
+
+  6.5% {
+    transform: scaleY(1.2) translateY(-30px);
+  }
+
+  10% {
+    transform: scaleY(1) translateY(0);
+  }
+}
+
+@keyframes animateHover {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+@media (max-width: 767px) {
+  .info__title {
+    font-size: 38px;
+  }
+  .info__des {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 500px) {
+  .info__title {
+    font-size: 28px;
+  }
+}

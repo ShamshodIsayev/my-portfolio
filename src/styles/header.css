@@ -1,0 +1,27 @@
+.header {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 13;
+}
+
+.hamburger-icon {
+  display: block;
+  margin-left: auto;
+  width: 37px;
+  font-size: 22px;
+  color: white;
+  padding-right: 2%;
+  cursor: pointer;
+}
+
+.hamburger-icon:hover {
+  color: #e4641d;
+  transition: 0.1s;
+}

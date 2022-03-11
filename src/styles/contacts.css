@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "laBelle";
+  src: url(../fonts/LaBelleAurore-Regular.ttf);
+}
+@font-face {
+  font-family: "smooch";
+  src: url(../fonts/Smooch-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.contacts {
+  background: url("../images/bg.jpg") no-repeat;
+  height: 100vh;
+  z-index: 11;
+  display: flex;
+  justify-content: center;
+  gap: 3%;
+  align-items: center;
+  perspective: 500px;
+}
+
+.contacts__wrapper {
+  width: 70%;
+  display: block;
+  margin: auto;
+}
+
+.contacts__body {
+  padding-left: 5%;
+}
+
+.contacts__tag-html,
+.contacts__tag {
+  color: grey;
+  font-family: "labelle";
+}
+
+.contacts h2 {
+  font-size: 40px;
+  font-family: fangsong;
+  position: relative;
+  color: white;
+  margin: 10px 0;
+  text-shadow: 0 0 7px;
+  width: 90%;
+  padding-left: 2%;
+}
+
+.contacts span {
+  transition: 2s;
+  display: inline-block;
+  animation: none;
+}
+
+.contacts span:hover {
+  animation: animateTexts 5s ease-in-out 0s 1 forwards;
+  color: aqua;
+}
+
+.contacts span.active {
+  animation: animateTexts 5s ease-in-out 0s 1 forwards;
+  color: aqua;
+}
+
+.contacts__pic {
+  width: 20%;
+}
+
+.contacts__ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2%;
+}
+
+.contacts__li {
+}
+
+.contacts__icon {
+  color: red;
+  font-size: 60px;
+  transition: 0.5s;
+  border-radius: 50%;
+}
+
+.contacts__icon:hover {
+  transform: scale(1.3);
+  box-shadow: 0 0 15px 1px white;
+}
+
+.icon-gm {
+  color: white;
+}
+
+.icon-tg {
+  color: rgb(24, 119, 197);
+}
+
+.icon-in {
+  background-color: rgb(24, 119, 197);
+  color: white;
+  border-radius: 50%;
+}
+
+.icon-fb {
+  color: blue;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+@keyframes animateTexts {
+  0% {
+    transform: scaleX(1) scaleY(1);
+  }
+  4% {
+    transform: scaleX(1.4) scaleY(0.8);
+  }
+  6% {
+    transform: scaleX(0.7) scaleY(1.4);
+  }
+  8% {
+    transform: scaleX(1.1) scaleY(0.9);
+  }
+  10% {
+    transform: scaleX(1) scaleY(1);
+  }
+}

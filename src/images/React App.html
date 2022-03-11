@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html lang="en"><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><style lang="en" type="text/css" id="dark-mode-native-style"></style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <script defer="" src="./React App_files/bundle.js.download"></script><style>body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9pbmRleC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxTQUFTO0VBQ1Q7O2NBRVk7RUFDWixtQ0FBbUM7RUFDbkMsa0NBQWtDO0FBQ3BDOztBQUVBO0VBQ0U7YUFDVztBQUNiIiwic291cmNlc0NvbnRlbnQiOlsiYm9keSB7XG4gIG1hcmdpbjogMDtcbiAgZm9udC1mYW1pbHk6IC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgJ1NlZ29lIFVJJywgJ1JvYm90bycsICdPeHlnZW4nLFxuICAgICdVYnVudHUnLCAnQ2FudGFyZWxsJywgJ0ZpcmEgU2FucycsICdEcm9pZCBTYW5zJywgJ0hlbHZldGljYSBOZXVlJyxcbiAgICBzYW5zLXNlcmlmO1xuICAtd2Via2l0LWZvbnQtc21vb3RoaW5nOiBhbnRpYWxpYXNlZDtcbiAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTtcbn1cblxuY29kZSB7XG4gIGZvbnQtZmFtaWx5OiBzb3VyY2UtY29kZS1wcm8sIE1lbmxvLCBNb25hY28sIENvbnNvbGFzLCAnQ291cmllciBOZXcnLFxuICAgIG1vbm9zcGFjZTtcbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZVJvb3QiOiIifQ== */</style><style>
+.header {
+  background-color: #030716;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 42px;
+}
+
+.hamburger-icon {
+  display: block;
+  margin-left: auto;
+  width: 37px;
+  padding-right: 2%;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9zdHlsZXMvaGVhZGVyLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQ0E7RUFDRSx5QkFBeUI7RUFDekIsa0JBQWtCO0VBQ2xCLE1BQU07RUFDTixPQUFPO0VBQ1AsV0FBVztFQUNYLFlBQVk7QUFDZDs7QUFFQTtFQUNFLGNBQWM7RUFDZCxpQkFBaUI7RUFDakIsV0FBVztFQUNYLGlCQUFpQjtBQUNuQiIsInNvdXJjZXNDb250ZW50IjpbIlxyXG4uaGVhZGVyIHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMDMwNzE2O1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICB0b3A6IDA7XHJcbiAgbGVmdDogMDtcclxuICB3aWR0aDogMTAwJTtcclxuICBoZWlnaHQ6IDQycHg7XHJcbn1cclxuXHJcbi5oYW1idXJnZXItaWNvbiB7XHJcbiAgZGlzcGxheTogYmxvY2s7XHJcbiAgbWFyZ2luLWxlZnQ6IGF1dG87XHJcbiAgd2lkdGg6IDM3cHg7XHJcbiAgcGFkZGluZy1yaWdodDogMiU7XHJcbn1cclxuIl0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>@font-face {
+  font-family: "laBelle";
+  src: url(http://localhost:3000/static/media/LaBelleAurore-Regular.bc43b15661f3e942b3f6.ttf);
+}
+@font-face {
+  font-family: "smooch";
+  src: url(http://localhost:3000/static/media/Smooch-Regular.271aba559f449deaefdf.ttf);
+}
+
+p {
+  margin: 8px 0;
+}
+
+.main {
+  position: relative;
+}
+
+.info {
+  padding: 6% 5% 5% 15%;
+  background-color: rgba(0, 0, 0, 0.856);
+  height: 89vh;
+}
+
+.info__tag-html,
+.info__tag {
+  color: grey;
+  font-family: "labelle";
+}
+
+.info__body {
+  padding-left: 5%;
+}
+
+.info__title {
+  width: 50vw;
+  font-size: 50px;
+  font-family: fangsong;
+  position: relative;
+  color: white;
+}
+
+.info__title span {
+  transition: 2s;
+  position: absolute;
+  transform: rotate(19000deg);
+  top: -1000%;
+  left: -1500%;
+}
+
+.info__title span.animate{}
+
+
+
+.info__title span.active {
+  top: 0;
+  left: 0;
+  transform: rotate(0);
+  position: inherit;
+}
+
+.info__title span.setted {
+}
+
+.fixed-logo {
+  position: absolute;
+  top: 20%;
+  right: 6%;
+  transform: rotate(333deg);
+  font-size: 304px;
+  z-index: 1;
+  font-weight: 100;
+  font-style: italic;
+  font-family: "smooch";
+  color: #00000042;
+  margin: 0;
+}
+
+.animation * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  animation: animateHover 5s linear infinite;
+  background-color: #0013006b;
+  overflow: hidden;
+  z-index: 11;
+  display: none;
+}
+
+@keyframes animateHover {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.animation span {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+
+.animation span::before {
+  content: "";
+  position: absolute;
+  background-color: red;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: 1s;
+  transform: scale(0);
+  box-shadow: 0 0 12px red, 0 0 12px red, 0 0 20px red, 0 0 30px red,
+    0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red, 0 0 80px red,
+    0 0 90px red, 0 0 100px red;
+}
+
+.animation span:hover::before {
+  transition: 0s;
+  transform: scale(1);
+}
+
+@keyframes animateText {
+  0%{
+
+  } 
+  30%{
+    
+  }
+
+  65%{
+
+  }
+
+  100%{
+
+  } 
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9zdHlsZXMvbWFpbi5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxzQkFBc0I7RUFDdEIsNENBQTRDO0FBQzlDO0FBQ0E7RUFDRSxxQkFBcUI7RUFDckIsNENBQXFDO0FBQ3ZDOztBQUVBO0VBQ0UsYUFBYTtBQUNmOztBQUVBO0VBQ0Usa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UscUJBQXFCO0VBQ3JCLHNDQUFzQztFQUN0QyxZQUFZO0FBQ2Q7O0FBRUE7O0VBRUUsV0FBVztFQUNYLHNCQUFzQjtBQUN4Qjs7QUFFQTtFQUNFLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxlQUFlO0VBQ2YscUJBQXFCO0VBQ3JCLGtCQUFrQjtFQUNsQixZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxjQUFjO0VBQ2Qsa0JBQWtCO0VBQ2xCLDJCQUEyQjtFQUMzQixXQUFXO0VBQ1gsWUFBWTtBQUNkOztBQUVBLDBCQUEwQjs7OztBQUkxQjtFQUNFLE1BQU07RUFDTixPQUFPO0VBQ1Asb0JBQW9CO0VBQ3BCLGlCQUFpQjtBQUNuQjs7QUFFQTtBQUNBOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLFFBQVE7RUFDUixTQUFTO0VBQ1QseUJBQXlCO0VBQ3pCLGdCQUFnQjtFQUNoQixVQUFVO0VBQ1YsZ0JBQWdCO0VBQ2hCLGtCQUFrQjtFQUNsQixxQkFBcUI7RUFDckIsZ0JBQWdCO0VBQ2hCLFNBQVM7QUFDWDs7QUFFQTtFQUNFLFNBQVM7RUFDVCxVQUFVO0VBQ1Ysc0JBQXNCO0FBQ3hCOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLE1BQU07RUFDTixPQUFPO0VBQ1AsV0FBVztFQUNYLFlBQVk7RUFDWixhQUFhO0VBQ2IsdUJBQXVCO0VBQ3ZCLG1CQUFtQjtFQUNuQixlQUFlO0VBQ2YsMENBQTBDO0VBQzFDLDJCQUEyQjtFQUMzQixnQkFBZ0I7RUFDaEIsV0FBVztFQUNYLGFBQWE7QUFDZjs7QUFFQTtFQUNFO0lBQ0Usd0JBQXdCO0VBQzFCOztFQUVBO0lBQ0UsMEJBQTBCO0VBQzVCO0FBQ0Y7O0FBRUE7RUFDRSxjQUFjO0VBQ2QsV0FBVztFQUNYLFlBQVk7RUFDWixrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsa0JBQWtCO0VBQ2xCLHFCQUFxQjtFQUNyQixNQUFNO0VBQ04sT0FBTztFQUNQLFdBQVc7RUFDWCxZQUFZO0VBQ1osa0JBQWtCO0VBQ2xCLGNBQWM7RUFDZCxtQkFBbUI7RUFDbkI7OytCQUU2QjtBQUMvQjs7QUFFQTtFQUNFLGNBQWM7RUFDZCxtQkFBbUI7QUFDckI7O0FBRUE7RUFDRTs7RUFFQTtFQUNBOztFQUVBOztFQUVBOztFQUVBOztFQUVBOztFQUVBO0FBQ0YiLCJzb3VyY2VzQ29udGVudCI6WyJAZm9udC1mYWNlIHtcclxuICBmb250LWZhbWlseTogXCJsYUJlbGxlXCI7XHJcbiAgc3JjOiB1cmwoLi4vZm9udHMvTGFCZWxsZUF1cm9yZS1SZWd1bGFyLnR0Zik7XHJcbn1cclxuQGZvbnQtZmFjZSB7XHJcbiAgZm9udC1mYW1pbHk6IFwic21vb2NoXCI7XHJcbiAgc3JjOiB1cmwoLi4vZm9udHMvU21vb2NoLVJlZ3VsYXIudHRmKTtcclxufVxyXG5cclxucCB7XHJcbiAgbWFyZ2luOiA4cHggMDtcclxufVxyXG5cclxuLm1haW4ge1xyXG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxufVxyXG5cclxuLmluZm8ge1xyXG4gIHBhZGRpbmc6IDYlIDUlIDUlIDE1JTtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIDAuODU2KTtcclxuICBoZWlnaHQ6IDg5dmg7XHJcbn1cclxuXHJcbi5pbmZvX190YWctaHRtbCxcclxuLmluZm9fX3RhZyB7XHJcbiAgY29sb3I6IGdyZXk7XHJcbiAgZm9udC1mYW1pbHk6IFwibGFiZWxsZVwiO1xyXG59XHJcblxyXG4uaW5mb19fYm9keSB7XHJcbiAgcGFkZGluZy1sZWZ0OiA1JTtcclxufVxyXG5cclxuLmluZm9fX3RpdGxlIHtcclxuICB3aWR0aDogNTB2dztcclxuICBmb250LXNpemU6IDUwcHg7XHJcbiAgZm9udC1mYW1pbHk6IGZhbmdzb25nO1xyXG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICBjb2xvcjogd2hpdGU7XHJcbn1cclxuXHJcbi5pbmZvX190aXRsZSBzcGFuIHtcclxuICB0cmFuc2l0aW9uOiAycztcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgdHJhbnNmb3JtOiByb3RhdGUoMTkwMDBkZWcpO1xyXG4gIHRvcDogLTEwMDAlO1xyXG4gIGxlZnQ6IC0xNTAwJTtcclxufVxyXG5cclxuLmluZm9fX3RpdGxlIHNwYW4uYW5pbWF0ZXt9XHJcblxyXG5cclxuXHJcbi5pbmZvX190aXRsZSBzcGFuLmFjdGl2ZSB7XHJcbiAgdG9wOiAwO1xyXG4gIGxlZnQ6IDA7XHJcbiAgdHJhbnNmb3JtOiByb3RhdGUoMCk7XHJcbiAgcG9zaXRpb246IGluaGVyaXQ7XHJcbn1cclxuXHJcbi5pbmZvX190aXRsZSBzcGFuLnNldHRlZCB7XHJcbn1cclxuXHJcbi5maXhlZC1sb2dvIHtcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgdG9wOiAyMCU7XHJcbiAgcmlnaHQ6IDYlO1xyXG4gIHRyYW5zZm9ybTogcm90YXRlKDMzM2RlZyk7XHJcbiAgZm9udC1zaXplOiAzMDRweDtcclxuICB6LWluZGV4OiAxO1xyXG4gIGZvbnQtd2VpZ2h0OiAxMDA7XHJcbiAgZm9udC1zdHlsZTogaXRhbGljO1xyXG4gIGZvbnQtZmFtaWx5OiBcInNtb29jaFwiO1xyXG4gIGNvbG9yOiAjMDAwMDAwNDI7XHJcbiAgbWFyZ2luOiAwO1xyXG59XHJcblxyXG4uYW5pbWF0aW9uICoge1xyXG4gIG1hcmdpbjogMDtcclxuICBwYWRkaW5nOiAwO1xyXG4gIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XHJcbn1cclxuXHJcbi5hbmltYXRpb24ge1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICB0b3A6IDA7XHJcbiAgbGVmdDogMDtcclxuICB3aWR0aDogMTAwJTtcclxuICBoZWlnaHQ6IDEwMCU7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gIGZsZXgtd3JhcDogd3JhcDtcclxuICBhbmltYXRpb246IGFuaW1hdGVIb3ZlciA1cyBsaW5lYXIgaW5maW5pdGU7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogIzAwMTMwMDZiO1xyXG4gIG92ZXJmbG93OiBoaWRkZW47XHJcbiAgei1pbmRleDogMTE7XHJcbiAgZGlzcGxheTogbm9uZTtcclxufVxyXG5cclxuQGtleWZyYW1lcyBhbmltYXRlSG92ZXIge1xyXG4gIDAlIHtcclxuICAgIGZpbHRlcjogaHVlLXJvdGF0ZSgwZGVnKTtcclxuICB9XHJcblxyXG4gIDEwMCUge1xyXG4gICAgZmlsdGVyOiBodWUtcm90YXRlKDM2MGRlZyk7XHJcbiAgfVxyXG59XHJcblxyXG4uYW5pbWF0aW9uIHNwYW4ge1xyXG4gIGRpc3BsYXk6IGJsb2NrO1xyXG4gIHdpZHRoOiA0MHB4O1xyXG4gIGhlaWdodDogNDBweDtcclxuICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbn1cclxuXHJcbi5hbmltYXRpb24gc3Bhbjo6YmVmb3JlIHtcclxuICBjb250ZW50OiBcIlwiO1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiByZWQ7XHJcbiAgdG9wOiAwO1xyXG4gIGxlZnQ6IDA7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgaGVpZ2h0OiAxMDAlO1xyXG4gIGJvcmRlci1yYWRpdXM6IDUwJTtcclxuICB0cmFuc2l0aW9uOiAxcztcclxuICB0cmFuc2Zvcm06IHNjYWxlKDApO1xyXG4gIGJveC1zaGFkb3c6IDAgMCAxMnB4IHJlZCwgMCAwIDEycHggcmVkLCAwIDAgMjBweCByZWQsIDAgMCAzMHB4IHJlZCxcclxuICAgIDAgMCA0MHB4IHJlZCwgMCAwIDUwcHggcmVkLCAwIDAgNjBweCByZWQsIDAgMCA3MHB4IHJlZCwgMCAwIDgwcHggcmVkLFxyXG4gICAgMCAwIDkwcHggcmVkLCAwIDAgMTAwcHggcmVkO1xyXG59XHJcblxyXG4uYW5pbWF0aW9uIHNwYW46aG92ZXI6OmJlZm9yZSB7XHJcbiAgdHJhbnNpdGlvbjogMHM7XHJcbiAgdHJhbnNmb3JtOiBzY2FsZSgxKTtcclxufVxyXG5cclxuQGtleWZyYW1lcyBhbmltYXRlVGV4dCB7XHJcbiAgMCV7XHJcblxyXG4gIH0gXHJcbiAgMzAle1xyXG4gICAgXHJcbiAgfVxyXG5cclxuICA2NSV7XHJcblxyXG4gIH1cclxuXHJcbiAgMTAwJXtcclxuXHJcbiAgfSBcclxufSJdLCJzb3VyY2VSb290IjoiIn0= */</style></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class="App"><div class="main"><div class="header"><img alt="icon" class="hamburger-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWgAAAFoBAMAAACIy3zmAAAAElBMVEXu7u7///8AAAASEhLe3t6KiorX0H0NAAAC0UlEQVR42u3dQW4aQRQEUFryARoFX4AJBzDIexP5Asb3v0ssGyuxlD/DIgnV6PXGNKun0YjxL3VpVuuP1Vcfa4jtChoaGhoaGhoa+hbR59XO34+0hYaGhoaGhoaGvi20IQAaGhoaGhoaGlpqanKBhoaGhoaGhoaWmkJDQ0NDQ0NDQ0tNTS7Q0NBR6HXgWkC39d3z23o6f/38sa66bYvozeshbj0e+yy676f9NmxN+8NZXaBPceR39m49g77fhq6XXqNPqehdje7b2HUsU9NvueiHaghoP2LN0/cSfcq90rsSvc9FHyp0D0ZPJXobvMppfET0kLdHGxI95E9e7sNlWz5cgh/jU/kYX21yr3Qr0bk39a5OTVvuEDCXmp5SL/TcjLjJnBHnB9shI4Qxw5pfnwaKxaSm0NDQ0NDOmjo6AQ0NDQ0NDQ0N7aypyQUaGhoaGhoaGtoQAA0NDQ0NDQ0NLTX9q0NA7619bluL2C6gP/9mrQX05jXvUO8FHds89GLH9qBjq2NboIMrI8cSfZ+LfijRyR3bXqGTC2clOrljOyJ6ahU6ua7aitR0yGKwjq2OrY6tju3NdWwf69xjmI7tlxwkt2M7lzBtItXTcRbdMiOEy7K8rNUvDCD76u3fqp6xlZo6OgENDQ0NDQ0NDe2sKTQ0NDQ0NDQ0tLOmhgBoaGhoaGhoaGipqckFGhoaGvr/o5NWvwD9/unu/G6S87dX3T4tHdtsmS+hmUW3zX6K641MC0eRczu2M6lp6vH6/Uuvh4ARO7bDvMf2d3Tye2xLtI6tjq2O7ZU6tsOjk2+P1Yjo2/rJS+7Y9vEe49NDmZrq2P6D6uef0UN2bFMv9W5hsB2zYztchDBmWBNZDJaaQkNDO2vq6AQ0NDQ0NDQ0NLSzpiYXaGhoaGhoaGhoqSk0NDQ0NDQ0NLTU1OQCDQ0NDQ0NDQ0tNYWGhoaGhoaGho7d/gQgC0ipnyL6FAAAAABJRU5ErkJggg=="></div><div class="info"><p class="info__tag-html">&lt;html&gt;</p><div class="info__body"><p class="info__tag">&lt;body&gt;</p><p class="info__tag">&lt;h1&gt;</p><h1 class="info__title"><span classname="info__title-letter" class="active" style="
+    transform: skewX(5deg);
+">H</span><span classname="info__title-letter" class="active">i</span><span classname="info__title-letter" class="active">,</span><br> <span classname="info__title-letter" class="active">I</span><span classname="info__title-letter" class="active">'</span><span classname="info__title-letter" class="active">m</span> <span classname="info__title-letter" class="active">S</span><span classname="info__title-letter" class="active">h</span><span classname="info__title-letter" class="active">a</span><span classname="info__title-letter" class="active">,</span><br> <span classname="info__title-letter" class="active">w</span><span classname="info__title-letter" class="active">e</span><span classname="info__title-letter" class="active">b</span> <span classname="info__title-letter" class="active">d</span><span classname="info__title-letter" class="active">e</span><span classname="info__title-letter" class="active">v</span><span classname="info__title-letter" class="active">e</span><span classname="info__title-letter" class="active">l</span><span classname="info__title-letter" class="active">o</span><span classname="info__title-letter" class="active">p</span><span classname="info__title-letter" class="active">e</span><span classname="info__title-letter" class="active">r</span></h1><p class="info__tag">&lt;/h1&gt;</p><p class="info__tag">&lt;p&gt;</p>Front End Developer<p class="info__tag">&lt;/p&gt;</p><p class="info__tag">&lt;/body&gt;</p></div><p class="info__tag-html">&lt;/html&gt;</p><div class="animation"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div><h3 class="fixed-logo">SH</h3></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  
+
+</body></html>

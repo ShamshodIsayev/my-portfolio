@@ -1,0 +1,400 @@
+@font-face {
+  font-family: "laBelle";
+  src: url(../fonts/LaBelleAurore-Regular.ttf);
+}
+@font-face {
+  font-family: "smooch";
+  src: url(../fonts/Smooch-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e8e8e8;
+  border: 0px none #ffffff;
+  border-radius: 36px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #d9d9d9;
+}
+::-webkit-scrollbar-track {
+  background: #3d3d3d;
+  border: 0px none #ffffff;
+  border-radius: 48px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #2e2e2e;
+}
+::-webkit-scrollbar-track:active {
+  background: #292929;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.projects {
+  background: url("../images/bg.jpg") no-repeat;
+  background-color: rgba(0, 0, 0, 0.856);
+  height: 100vh;
+  z-index: 11;
+  padding: 2%;
+  perspective: 500px;
+}
+
+.projects__tag-html,
+.projects__tag {
+  color: grey;
+  font-family: "labelle";
+}
+
+.projects__body {
+  padding-left: 2%;
+}
+
+.projects h2 {
+  font-size: 40px;
+  font-family: fangsong;
+  position: relative;
+  color: white;
+  margin: 10px 0;
+  text-shadow: 0 0 7px;
+  width: 90%;
+  padding-left: 2%;
+  transition: 1s;
+  text-align: center;
+}
+
+.projects span {
+  display: inline-block;
+  transition: 1.5s;
+}
+
+span.active {
+  animation: animateText 6s ease-out 0s 1 forwards;
+  color: aqua;
+}
+
+/* card --------------- */
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+  height: 50vh;
+  flex-wrap: wrap;
+  gap: 2%;
+  width: 95%;
+}
+
+.card {
+  width: 48%;
+  border: solid 1px white;
+  border-radius: 10px;
+  background-color: #d8d8d862;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  height: 38vh;
+  position: relative;
+  filter: contrast(1.2) saturate(1.2);
+  overflow: hidden;
+  transition: 1s;
+}
+
+.card:hover {
+  box-shadow: 4px 1px 20px 0px #575757;
+}
+
+.card__top {
+  background-size: cover !important;
+  position: relative;
+  padding: 3%;
+  transition: 1s;
+  height: 100%;
+}
+
+.card__top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #0000002d;
+  height: 100%;
+}
+
+.card__bottom {
+  padding: 3%;
+}
+
+.card:hover .card__blur {
+  opacity: 1;
+}
+
+.cards__title {
+  width: 100%;
+  color: white;
+  font-size: 22px;
+  text-align: center;
+  margin: 6% auto 2%;
+}
+
+.card__blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  background-color: #09021b9f;
+  transition: 0.5s;
+}
+
+.card__blue-icon {
+  font-size: 25px;
+  color: #091974;
+  box-shadow: 0 0 9px 1px white;
+  border-radius: 50%;
+  background-color: white;
+}
+
+@keyframes animateText {
+  0% {
+    transform: scaleX(1) scaleY(1);
+  }
+  4% {
+    transform: scaleX(1.6) scaleY(0.8);
+  }
+  6% {
+    transform: scaleX(0.7) scaleY(1.6);
+  }
+  8% {
+    transform: scaleX(1.1) scaleY(0.9);
+  }
+  10% {
+    transform: scaleX(1) scaleY(1);
+  }
+}
+
+@keyframes animateWindow {
+  0% {
+    width: 0;
+    height: 2%;
+  }
+  50% {
+    width: 80%;
+  }
+  100% {
+    height: 88vh;
+  }
+}
+
+/* project --------------------*/
+
+.project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #292929;
+  flex-direction: column;
+  height: 0;
+  width: 0;
+  border-radius: 10px;
+  border: 1px solid white;
+  z-index: 12;
+  overflow: hidden;
+}
+
+.project.active {
+  animation: animateWindow 1s ease 0s 1 forwards;
+  transition: width 1s, height 1s, top 1s;
+  width: 80%;
+  height: 88vh;
+  top: 50%;
+}
+
+.project__top {
+  height: 60%;
+  width: 100%;
+  background-size: cover !important;
+  position: relative;
+}
+
+.project__bottom {
+  padding: 2%;
+}
+
+.project__bottom-title {
+  width: 100% !important;
+  display: none;
+}
+
+.project.active .project__bottom-title {
+  display: block;
+}
+
+.project__bottom-description,
+.project__bottom-stacks {
+  color: white;
+  font-family: fangsong;
+  font-size: 20px;
+  text-align: center;
+  display: none;
+}
+
+.project__bottom-description a {
+  color: #4662ff;
+}
+
+.project.active p {
+  opacity: 1;
+  display: block;
+}
+
+.project__bottom-stacks {
+  background-color: #e4641d;
+  text-align: center;
+  font-weight: 600;
+  margin: 15px;
+  padding: 2px;
+  border-radius: 3px;
+  display: none;
+}
+
+.project.active .project__bottom-stacks {
+  display: block;
+}
+
+.project__bottom-btn {
+  display: block;
+  margin: auto;
+  height: 48px;
+  max-width: 320px;
+  width: 100%;
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: fangsong;
+  opacity: 0;
+  display: none;
+  border: 1px solid rgb(0 0 78 / 85%);
+}
+
+.project__bottom-btn::before {
+  content: "";
+  width: 120%;
+  height: 380%;
+  position: absolute;
+  top: -150%;
+  left: -140%;
+  transform: rotate(16deg);
+  background-color: rgb(0 0 78 / 85%);
+  transition: left 0.5s;
+  opacity: 0;
+  z-index: 1;
+}
+
+.project.active .project__bottom-btn {
+  opacity: 1;
+}
+
+.project.active .project__bottom-btn:before {
+  opacity: 1;
+}
+
+.project__bottom-btn:hover::before {
+  left: -10%;
+}
+
+.project__bottom-btn:hover {
+  color: white;
+}
+
+.project__bottom-btn a {
+  color: white;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.project.active .project__bottom-btn {
+  display: flex;
+}
+
+.project__close-icon {
+  position: absolute;
+  right: 3%;
+  top: 3%;
+  font-size: 32px;
+  color: white;
+  transition: 0.3s;
+  width: 35px;
+  backdrop-filter: blur(1px);
+  border-radius: 8px;
+  cursor: pointer;
+  background: black;
+  display: none;
+}
+
+.project.active .project__close-icon {
+  display: block;
+}
+
+.project__close-icon:hover {
+  color: #e4641d !important;
+}
+
+.blured {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.856);
+  top: 0;
+  left: 0;
+}
+
+.fixed-logo {
+  position: absolute;
+  top: 20%;
+  right: 6%;
+  transform: rotate(333deg);
+  font-size: 304px;
+  font-weight: 100;
+  font-style: italic;
+  font-family: "smooch";
+  color: #00000042;
+  margin: 0;
+}

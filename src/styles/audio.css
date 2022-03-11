@@ -1,0 +1,53 @@
+.audio {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  width: 10%;
+  height: 5%;
+  z-index: 22;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+.audio p {
+  color: rgb(180, 0, 0);
+  text-decoration: line-through;
+  font-family: fangsong;
+  font-weight: 100;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+}
+
+.audio_icon {
+  font-size: 28px;
+  color: rgb(180, 0, 0);
+}
+
+.audio.active p {
+  color: rgb(23, 136, 23);
+  text-decoration: none;
+}
+
+.audio.active .audio__icon {
+  color: rgb(23, 136, 23);
+}
+
+.audio.stop {
+}
+
+@media (max-width: 600px) {
+  .audio {
+    left: 4%;
+  }
+}
+
+@media (max-width: 400px) {
+  .audio {
+    left: 8%;
+  }
+}
