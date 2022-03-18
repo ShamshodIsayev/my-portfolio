@@ -13,7 +13,7 @@ import Loading from "./components/Loading";
 import { Howl } from "howler";
 import NextPageTitle from "./components/NextPageTitle";
 import Contacts from "./pages/Contacts";
-const aud = require("./audio/tech.mp3");
+const aud = require("./audio/tech.ogg");
 
 function App() {
   const [status, setStatus] = useState("Main");
