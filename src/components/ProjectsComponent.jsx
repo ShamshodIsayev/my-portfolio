@@ -28,7 +28,7 @@ function ProjectsComponent() {
       title: "Christmas Tree",
       description: "Decorate your Christmas tree and get holiday mood",
       stacks: "JavaScript, TypeScript, Webpack, AJAX, REST-API, Font-Awesome",
-      link: "https://rolling-scopes-school.github.io/shamshodisayev-JSFE2021Q3/christmas-task/",
+      link: "https://rolling-scopes-school.github.io/shamshodisayev-JSFE2021Q3/christmas-task/old",
       image: "../images/tree.png",
       codeLink: "https://github.com/ShamshodIsayev/Christmas-tree-Typescript",
     },
