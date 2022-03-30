@@ -16,7 +16,7 @@ function ProjectsComponent() {
       name: "rslang",
       title: "RS-Language",
       description:
-        "Education platform: Improve and enhace your English with RS-lang application",
+        "Education platform: Improve and enhace your English with RS-lang application", 
       stacks:
         "React, React-router, TypeScript, Scss, React-hooks, Font-Awesome, REST-API, interaction Backend Server, TeamWork",
       link: "http://team48rslang.netlify.app",
